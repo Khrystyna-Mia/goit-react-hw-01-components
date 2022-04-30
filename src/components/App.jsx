@@ -1,18 +1,17 @@
-// import Profile from '../components/Profile';
+import Profile from '../components/Profile/Profile';
+import Statistics from '../components/Statistics/Statistics';
+import Container from '../components/Container/Container';
 
-export const App = () => {
+export const App = ({ data }) => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <Profile {...data.user} />
+
+      <Statistics title="Upload stats" data={data.statistics} />
+
+      {/* <Friends data={data.friends}/>
+
+      <Transactions items={data.transactions}/> */}
+    </Container>
   );
 };
