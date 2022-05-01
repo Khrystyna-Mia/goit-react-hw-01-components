@@ -11,8 +11,6 @@ export const App = ({ data }) => {
       <Statistics title="Upload stats" data={data.statistics} />
 
       <FriendList friends={data.friends} />
-
-      {/* <Transactions items={data.transactions}/> */}
     </Container>
   );
 };
