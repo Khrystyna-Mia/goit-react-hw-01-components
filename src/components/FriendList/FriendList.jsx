@@ -9,7 +9,7 @@ const FriendList = ({ friends }) => {
         key={id}
         avatar={avatar}
         name={name}
-        isONLine={isOnline}
+        isOnline={isOnline}
       />
     ));
 
