@@ -7,16 +7,15 @@
   line-height: 18px;
   letter-spacing: 0.2em;
 
-  color: #008b8b;
-  background: #fff;
+  color: var(--primaryTextColor);
+  background: var(--bgColor);
 
   cursor: pointer;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--boxShadow);
   border-radius: 6px;
 
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms var(--timingFn);
 }
 
 .profile:hover,
@@ -51,7 +50,7 @@
   margin-bottom: 10px;
   padding: 0;
 
-  color: #000;
+  color: var(--secondaryTextColor);
 }
 
 .tag {
@@ -83,7 +82,7 @@
   width: 100%;
   padding: 10px 4px;
 
-  background-color: #f7f7f7;
+  background-color: var(--bgContainerColor);
   border: 1px solid rgba(228, 233, 240);
 }
 
